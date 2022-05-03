@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 html body {
-    background-color:aquamarine;
+
+    /*background-color:aquamarine;*/
+
     font-family: 'Pacifico', sans-serif;
 }
 
@@ -9,3 +11,18 @@ img {
     content: url("https://upload.wikimedia.org/wikipedia/commons/e/ee/Grumpy_Cat_by_Gage_Skidmore.jpg")
 
 } 
+button {
+    padding: 10px;
+    height: 30px;
+    width: 30px;
+    outline: none;
+    margin: 10px;
+    border: none;
+    border-radius: 2px;
+  }
+  
+  button.current {
+    box-shadow: 0 0 0 2px white,
+                0 0 0 4px black;
+  }
+  
