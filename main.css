@@ -1,0 +1,23 @@
+/* page setup */
+
+body {
+  background-color: #f6efe9;
+  width: 250px; ;
+}
+
+h1 {
+  text-align: center;
+}
+
+.checkbox {
+  accent-color: #776658;
+}
+
+p,
+label {
+  font: 1rem 'Fira Sans', sans-serif;
+}
+
+input {
+  margin: .4rem;
+}
