@@ -20,7 +20,7 @@ changeFont.addEventListener("change", async () => {
 function setPageFontFamily() {
   chrome.storage.sync.get("fontFamily", ({ fontFamily }) => {
     //let title = document.getElementsByTagName("h1");
-    console.log(title);
+    //console.log(title);
     document.body.style.fontFamily = fontFamily;
     //document.title.style.fontFamily = fontFamily;
   });
