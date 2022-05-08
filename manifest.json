@@ -1,15 +1,16 @@
 {
-  "name": "Getting Started Example",
-  "options_page": "options.html",
+  "name": "Adapt'Eye",
+
   "description": "Build an Extension!",
   "version": "1.0",
   "manifest_version": 3,
+  "permissions": ["storage", "activeTab", "scripting", "fontSettings"],
   "background": {
     "service_worker": "background.js"
   },
-  "permissions": ["storage", "activeTab", "scripting"],
   "action": {
     "default_popup": "popup.html"
-  }
+  },
 
+  "options_page": "options.html"
 }

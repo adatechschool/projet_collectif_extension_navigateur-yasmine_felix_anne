@@ -19,10 +19,15 @@ changeFont.addEventListener("change", async () => {
 // current page
 function setPageFontFamily() {
   chrome.storage.sync.get("fontFamily", ({ fontFamily }) => {
-    //let title = document.getElementsByTagName("h1");
-    //console.log(title);
-    document.body.style.fontFamily = fontFamily;
+   let elements = document.getElementsByTagName("*");
+   console.log(elements);
+    Array.from(elements).forEach(element => {
+     element.setAttribute('style', 'font-family : ' + fontFamily + ' !important');
+   });
+
+    //document.body.style.setAttribute = fontFamily;
     //document.title.style.fontFamily = fontFamily;
+
   });
 }
 
