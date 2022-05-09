@@ -1,6 +1,15 @@
-let color = '#3aa757';
+chrome.runtime.onInstalled.addListener(buttonClicked)
+
+function buttonClicked() {
+  console.log("button clicked !")
+
+}
+
+//let fontFamily = '"Comic Sans MS", Helvetica, Arial, Tahoma, Lucida, Verdana, sans-serif';
+let fontFamily = '"Comic Sans MS"';
+
+
 
 chrome.runtime.onInstalled.addListener(() => {
-  chrome.storage.sync.set({ color });
-  console.log('Default background color set to %cgreen', `color: ${color}`);
+  chrome.storage.sync.set({ fontFamily });
 });

@@ -1,11 +1,35 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="button.css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+
   </head>
   <body>
-    <button id="changeColor"></button>
+    <div class="container">
+      <h1>Adapt’Eyes</h1>
+      <br>
+      <fieldset>
+        <legend>Choose your Adapt’Eyes's features:</legend>
+
+        <div>
+          <input type="checkbox" class="checkbox" id="dislexia" name="dislexia">
+          <label for="dislexia">Transform font: Dislexia Helper</label>
+        </div>
+
+        <div>
+          <input type="checkbox" class="checkbox" id="astigmatism" name="astigmatism">
+          <label for="astigmatism">Astigmatism Helper</label>
+        </div>
+
+        <div>
+          <input type="checkbox" class="checkbox" id="color-blindness" name="color-blindness">
+          <label for="color-blindness">Color blindness Helper</label>
+        </div>
+      </fieldset>
+
+    </div>
+
     <script src="popup.js"></script>
   </body>
 </html>
-
