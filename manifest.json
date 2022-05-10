@@ -11,6 +11,16 @@
   "action": {
     "default_popup": "popup.html"
   },
-
-  "options_page": "options.html"
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["font.css"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["font/opendyslexic-regular-webfont.woff2","font.css"],
+      "matches": ["<all_urls>"]
+    }
+  ]
 }
