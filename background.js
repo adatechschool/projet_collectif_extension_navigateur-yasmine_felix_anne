@@ -1,8 +1,8 @@
-chrome.runtime.onInstalled.addListener(buttonClicked)
+chrome.runtime.onInstalled.addListener()
 
-function buttonClicked() {
-  console.log("button clicked !")
-}
+// function buttonClicked() {
+//   console.log("button clicked !")
+// }
 
 //let fontFamily = '"Comic Sans MS", Helvetica, Arial, Tahoma, Lucida, Verdana, sans-serif';
 //let fontFamily = 'Roboto Flex, "Andika", "OpenDyslexic", Helvetica';
