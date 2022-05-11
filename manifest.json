@@ -4,11 +4,18 @@
   "description": "Build an Extension!",
   "version": "1.0",
   "manifest_version": 3,
-  "permissions": ["storage", "activeTab", "scripting", "fontSettings"],
+  "permissions": ["alarms",
+    "notifications",
+    "storage",
+    "activeTab",
+    "scripting",
+    "fontSettings"],
+
   "background": {
     "service_worker": "background.js"
   },
   "action": {
+    "default_title": "Drink Water Event",
     "default_popup": "popup.html"
   },
   "content_scripts": [
