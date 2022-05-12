@@ -1,5 +1,13 @@
 /* page setup */
 
+.container{
+  text-align: center;
+}
+
+legend{
+  font-weight: 700;
+}
+
 body {
   background-color: #f6efe9;
   width: 250px; ;
@@ -15,9 +23,70 @@ h1 {
 
 p,
 label {
-  font: 1rem 'Fira Sans', sans-serif;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+
 }
 
 input {
   margin: .4rem;
 }
+
+button{
+  border:#776658 solid 3px;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background: none;
+  cursor: pointer;
+  padding: 20px 25px;
+  display: inline-block;
+  margin: 5px 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  width: 175px;
+}
+
+button:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+button:after {
+	width: 0%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: #f6efe9;
+}
+
+button:hover,
+button:active {
+	color: #776658;
+}
+
+button:hover:after,
+button:active:after {
+	width: 100%;
+}
+
+
+
+
+
+

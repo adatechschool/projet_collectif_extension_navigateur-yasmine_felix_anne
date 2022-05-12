@@ -18,9 +18,9 @@ chrome.alarms.onAlarm.addListener(() => {
   chrome.action.setBadgeText({ text: '' });
   chrome.notifications.create({
     type: 'basic',
-    iconUrl: 'stay_hydrated.png',
-    title: 'Time to Hydrate',
-    message: 'Everyday I\'m Guzzlin\'!',
+    iconUrl: 'images/rest.png',
+    title: 'Think about having a little break for your eyes',
+    message: 'There is a world outside the screen, check for it.',
     buttons: [
       { title: 'Keep it Flowing.' }
     ],

@@ -29,5 +29,10 @@
       "resources": ["font/opendyslexic-regular-webfont.woff2","font.css"],
       "matches": ["<all_urls>"]
     }
-  ]
+  ],
+"icons":{
+  "16": "images/dyslexia_16.png",
+  "32": "images/dyslexia_32.png",
+  "128": "images/dyslexia_128.png"
+}
 }
